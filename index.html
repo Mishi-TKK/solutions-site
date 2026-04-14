@@ -7,12 +7,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
-            --primary-color: #2a4d69; /* You will change this to your blog color later */
-            --accent-color: #ffcc00; 
+            /* Purple is your Brand Identity */
+            --primary-color: #6a4c93; 
+            /* Gold is your "Action" color */
+            --accent-color: #ffd700;  
         }
         .bg-primary { background-color: var(--primary-color); }
         .text-primary { color: var(--primary-color); }
         .border-primary { border-color: var(--primary-color); }
+        
+        /* This makes the buttons Gold with Purple text (very readable) */
+        .btn-action { 
+            background-color: var(--accent-color); 
+            color: var(--primary-color);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
@@ -26,24 +34,32 @@
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-4xl font-extrabold mb-4">Stop wasting your Google Ads budget.</h2>
             <p class="text-lg text-gray-600 mb-8">I build AI-driven lead capture systems that answer customer queries and book appointments when you are busy or off the clock.</p>
-            <a href="#demos" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">View Industry Prototypes</a>
+            <a href="#demos" class="btn-action px-6 py-3 rounded-lg font-bold hover:opacity-90 transition shadow-lg">View Industry Prototypes</a>
         </div>
     </section>
 
+    <!-- Demos Section -->
     <section id="demos" class="py-20 px-8 bg-gray-100">
-        <div class="max-w-5xl mx-auto">
-            <h3 class="text-3xl font-bold mb-12 text-center">Functional Prototypes</h3>
-            <div class="grid md:grid-cols-2 gap-8">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-12">Functional Prototypes</h3>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                
+                <!-- Demo 1: Roofing Assistant -->
                 <div class="border-t-4 border-primary p-6 rounded-xl bg-white shadow-md">
-                    <h4 class="text-xl font-bold mb-2">Roofing Lead Assistant</h4>
-                    <p class="text-gray-600 mb-4">A bot designed to qualify roofing leads and collect project locations 24/7.</p>
-                    <span class="text-primary font-bold">[Demo Link Coming Soon]</span>
+                    <h4 class="text-xl font-bold mb-2 text-primary">Roofing Lead Assistant</h4>
+                    <p class="text-gray-600 mb-4">A custom AI bot trained to qualify roofing leads, answer service queries, and collect project info 24/7.</p>
+                    <!-- YOUR BOT LINK GOES BELOW -->
+                    <a href="https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/04/09/12/20260409122638-E6E0X1EF.json" target="_blank" class="text-primary font-bold hover:underline">Launch Demo →</a>
                 </div>
+
+                <!-- Demo 2: Plumber Page -->
                 <div class="border-t-4 border-primary p-6 rounded-xl bg-white shadow-md">
-                    <h4 class="text-xl font-bold mb-2">Plumbing Landing Page</h4>
-                    <p class="text-gray-600 mb-4">A high-speed site for plumbers currently running ads without a website.</p>
-                    <span class="text-primary font-bold">[Demo Link Coming Soon]</span>
+                    <h4 class="text-xl font-bold mb-2 text-primary">Plumbing Lead-Capture Page</h4>
+                    <p class="text-gray-600 mb-4">A high-speed, mobile-optimized landing page designed to turn Google Ad clicks into booked plumbing jobs.</p>
+                    <!-- YOUR WIX LINK GOES BELOW -->
+                    <a href="https://mishialien.wixsite.com/plumber-on-call" target="_blank" class="text-primary font-bold hover:underline">Launch Demo →</a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -51,7 +67,7 @@
     <footer class="py-20 bg-primary text-white text-center">
         <h3 class="text-3xl font-bold mb-4">Request a Demo for Your Business</h3>
         <p class="mb-8 opacity-80 italic">Direct, functional AI solutions for the trades.</p>
-        <p class="text-xl font-bold">Contact: your-email@theempressforge.com</p>
+        <p class="text-xl font-bold">Contact: solutions.empressforge@gmail.com</p>
     </footer>
 </body>
 </html>
