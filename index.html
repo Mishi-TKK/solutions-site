@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empress Forge Solutions | AI Automation</title>
+    <title>Empress Forge Solutions | Custom Digital Tools</title>
    <link rel="icon" type="image/jpeg" href="logo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -22,11 +22,32 @@
             background-color: var(--accent-color); 
             color: var(--primary-color);
         }
+
+        /* NEW: small category tag shown on each prototype card, so a mix of
+           different industries/tools reads as intentional breadth rather
+           than a random grab-bag */
+        .category-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            margin-bottom: 0.75rem;
+        }
+        .category-lead-gen {
+            background-color: #ede4f5;
+            color: var(--primary-color);
+        }
+        .category-operations {
+            background-color: #fff6d1;
+            color: #92720a;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
    <!-- Header -->
-    <!-- Header -->
     <header class="py-4 px-4 bg-white border-b-2 border-gray-100">
         <!-- 'w-full' and 'px-4' pushes everything to the edges -->
         <div class="w-full flex items-center justify-start gap-5">
@@ -41,11 +62,13 @@
             
         </div>
     </header>
+
+    <!-- ===================== HERO (CHANGED: broadened from plumbing-ads-only to a general "custom tools" promise) ===================== -->
     <section class="py-20 px-8">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl font-extrabold mb-4">Stop wasting your Google Ads budget.</h2>
-            <p class="text-lg text-gray-600 mb-8">I build high-conversion lead capture systems that qualify plumbing customers and book appointments 24/7.</p>
-            <a href="#demos" class="btn-action px-6 py-3 rounded-lg font-bold hover:opacity-90 transition shadow-lg">View Industry Prototypes</a>
+            <h2 class="text-4xl font-extrabold mb-4">I build custom tools that solve real business problems.</h2>
+            <p class="text-lg text-gray-600 mb-8">From lead-capture systems that book appointments 24/7, to everyday tools that keep a business running smoothly — see it working before you commit to anything.</p>
+            <a href="#demos" class="btn-action px-6 py-3 rounded-lg font-bold hover:opacity-90 transition shadow-lg">View Working Prototypes</a>
         </div>
     </section>
 
@@ -55,29 +78,40 @@
             <h3 class="text-3xl font-bold mb-12">Functional Prototypes</h3>
             <div class="grid md:grid-cols-2 gap-8 text-left">
                 
-                <!-- Demo 1: Roofing Assistant -->
+                <!-- Demo 1: Plumbing Booking System -->
                 <div class="border-t-4 border-primary p-6 rounded-xl bg-white shadow-md">
+                    <span class="category-tag category-lead-gen">Lead Generation</span>
                     <h4 class="text-xl font-bold mb-2 text-primary">Plumbing Booking System</h4>
                     <p class="text-gray-600 mb-4">An automated scheduling engine that allows residential customers to book service calls directly into your calendar. Perfect for non-emergency installs and maintenance.</p>
                     <!-- YOUR BOT LINK GOES BELOW -->
-                    <a href="https://calendly.com/solutions-empressforge/30min">Launch Demo →</a>
+                    <a href="https://calendly.com/solutions-empressforge/30min" target="_blank" class="text-primary font-bold hover:underline">Launch Demo →</a>
                 </div>
 
                 <!-- Demo 2: Plumber Page -->
                 <div class="border-t-4 border-primary p-6 rounded-xl bg-white shadow-md">
+                    <span class="category-tag category-lead-gen">Lead Generation</span>
                     <h4 class="text-xl font-bold mb-2 text-primary">Plumbing Lead-Capture Page</h4>
                     <p class="text-gray-600 mb-4">A high-speed, mobile-optimized landing page designed to turn Google Ad clicks into booked plumbing jobs.</p>
                     <!-- YOUR WIX LINK GOES BELOW -->
                     <a href="https://mishialien.wixsite.com/website" target="_blank" class="text-primary font-bold hover:underline">Launch Demo →</a>
                 </div>
 
+                <!-- Demo 3: Sovereign Ledger (NEW) -->
+                <div class="border-t-4 border-primary p-6 rounded-xl bg-white shadow-md">
+                    <span class="category-tag category-operations">Business Operations</span>
+                    <h4 class="text-xl font-bold mb-2 text-primary">Sovereign Ledger — Freelancer Dashboard</h4>
+                    <p class="text-gray-600 mb-4">A project tracker and invoicing tool for freelancers — manage clients and projects, check off milestones, and generate invoices with full status tracking (sent, paid, overdue, and more).</p>
+                    <a href="https://mishi-tkk.github.io/Sovereign-Ledger/" target="_blank" class="text-primary font-bold hover:underline">Launch Demo →</a>
+                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- CHANGED: footer tagline broadened to match the hero, dropped the trades-only qualifier -->
     <footer class="py-20 bg-primary text-white text-center">
         <h3 class="text-3xl font-bold mb-4">Request a Demo for Your Business</h3>
-        <p class="mb-8 opacity-80 italic">Direct, high-converting lead systems for the trades.</p>
+        <p class="mb-8 opacity-80 italic">Custom digital tools, built and proven before you pay a cent.</p>
         <p class="text-xl font-bold">Contact: solutions.empressforge@gmail.com</p>
     </footer>
 </body>
